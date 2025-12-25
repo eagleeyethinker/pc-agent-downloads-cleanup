@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+reports/
+src/pc_agent_downloads_cleanup.egg-info
