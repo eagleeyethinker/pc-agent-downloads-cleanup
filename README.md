@@ -1,11 +1,11 @@
-
----
-
 # PC Downloads Cleanup Agent (LangGraph)
 
 A **local, agentic AI assistant** that safely cleans your Windows *Downloads* folder using **LangGraph**, with optional human-in-the-loop control.
 
----
+## Architecture
+
+<img width="400" height="800" alt="PC Agent Architecture" src="https://github.com/user-attachments/assets/6fed2b9f-e671-4833-a580-67a2176d37a6" />
+
 
 ## Install (Dev Mode)
 
