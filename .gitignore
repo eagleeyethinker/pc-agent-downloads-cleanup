@@ -5,4 +5,4 @@ __pycache__/
 dist/
 build/
 reports/
-src/pc_agent_downloads_cleanup.egg-info
+*.egg-info/
