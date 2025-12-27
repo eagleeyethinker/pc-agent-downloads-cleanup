@@ -1,6 +1,6 @@
 # PC Downloads Cleanup Agent (LangGraph)
 
-A **local, agentic AI assistant** that safely cleans your Windows *Downloads* folder using **LangGraph**, with optional human-in-the-loop control.
+A local, LangGraph-powered agentic workflow that safely automates real PC tasks with human oversight.
 
 ## Architecture
 
@@ -95,20 +95,35 @@ pc-agent "Clean up my Downloads: archive installers older than 30 days and show 
 
 ---
 
-## Why This Is Still “Agentic AI” (Even One-Time)
+✅ AI Agent
 
-**An agent is defined by behavior — not uptime.**
+Because it:
 
-This system already has:
+* Accepts a goal in natural language
+* Reasons about steps
+* Uses tools (filesystem, OS actions)
+* Produces actions + reports
 
-1. **Goal interpretation** (LLM or structured parser)
-2. **Environment inspection** (filesystem scanning)
-3. **Planning** (proposed actions)
-4. **Tool use** (file move/archive operations)
-5. **Human-in-the-loop control**
-6. **Memory** (persistent Markdown reports)
+✔️ That’s an agent.
 
-That absolutely qualifies as an **agentic system**.
+✅ Agentic AI
+
+* Decides what to do next
+* Maintains state (files found, actions taken)
+* Can loop, branch, and reflect
+* Operates semi-autonomously with guardrails
+
+✔️ That makes it agentic, not just scripted automation.
+
+✅ Agentic Workflow
+
+* Follows a multi-step process
+* Has clear stages (analyze → plan → act → report)
+* Supports human-in-the-loop
+* Is repeatable, auditable, and safe
+* Is implemented as a LangGraph state machine
+
+✔️ That makes it agentic workflow.
 
 ---
 
