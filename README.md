@@ -2,11 +2,34 @@
 
 A local, LangGraph-powered agentic workflow that safely automates real PC tasks with human oversight.
 
-## Architecture
+## Architecture Diagram
 
 <img
   src="images/pc-agent-architecture.png"
   alt="PC Agent Architecture"
+  width="400"
+/>
+
+**LLM Reasoner** interprets intent and proposes actions.
+
+**Planner** decomposes into steps.
+
+**LangGraph Orchestrator** executes the steps as a stateful graph.
+
+**Tool Router** calls concrete tools (file scanning/moving).
+
+**Guardrails/Policy** prevent unsafe actions (ex: deleting system folders).
+
+**HITL** gate enforces human approval before making changes.
+
+**Observability + Audit log** keep a traceable record.
+
+**Memory** stores your preferences (e.g., “30 days”, “archive path”).
+
+## Flow Diagram
+<img
+  src="images/pc-agent-flow.png"
+  alt="PC Agent Flow"
   width="400"
 />
 
@@ -95,10 +118,11 @@ pc-agent "Clean up my Downloads: archive installers older than 30 days and show 
 
 ---
 
+## Big picture 
+
 ✅ AI Agent
 
 Because it:
-
 * Accepts a goal in natural language
 * Reasons about steps
 * Uses tools (filesystem, OS actions)
@@ -108,6 +132,7 @@ Because it:
 
 ✅ Agentic AI
 
+Because it:
 * Decides what to do next
 * Maintains state (files found, actions taken)
 * Can loop, branch, and reflect
@@ -117,6 +142,7 @@ Because it:
 
 ✅ Agentic Workflow
 
+Because it:
 * Follows a multi-step process
 * Has clear stages (analyze → plan → act → report)
 * Supports human-in-the-loop
@@ -125,7 +151,11 @@ Because it:
 
 ✔️ That makes it agentic workflow.
 
----
+✅ LangGraph = a flowchart for AI, where:
+
+* State = what the AI knows right now
+* Nodes = actions the AI can take
+* Edges = rules for what happens next
 
 ## Automation (Optional)
 
