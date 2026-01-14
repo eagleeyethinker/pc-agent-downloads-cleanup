@@ -6,8 +6,8 @@ A local, LangGraph-powered agentic workflow that safely automates real PC tasks 
 
 <img
   src="images/pc-agent-architecture.png"
-  alt="PC Agent Architecture"
-  width="400"
+  alt="PC Agent Architecture" 
+    width="600"
 />
 
 **LLM Reasoner** interprets intent and proposes actions.
